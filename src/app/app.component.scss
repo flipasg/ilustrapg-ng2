@@ -1,0 +1,8 @@
+@import '../scss/styles.scss';
+* {
+    font-family: $font-family-base;
+}
+
+.min-height-100 {
+    min-height: 100%;
+}

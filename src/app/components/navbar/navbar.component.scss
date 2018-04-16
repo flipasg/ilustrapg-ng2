@@ -1,0 +1,24 @@
+@import '../../../scss/_variables.scss';
+
+.navbar {
+    height: 50px;
+}
+
+.navbar button {
+    height: 50px;
+    width: 50px;
+    background: $darken-secondary;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.border-radius-0 {
+  border-radius: 0px;
+}
