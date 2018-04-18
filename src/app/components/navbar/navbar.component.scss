@@ -7,7 +7,7 @@
 .navbar button {
     height: 50px;
     width: 50px;
-    background: $darken-secondary;
+    background: $darken-primary;
 }
 
 .logo:hover {
@@ -21,4 +21,11 @@
 
 .border-radius-0 {
   border-radius: 0px;
+}
+
+.bg-texture {
+  background: url(assets/backgrounds/header-texture.jpeg) no-repeat center center;
+  background-size: 100%;
+
+
 }

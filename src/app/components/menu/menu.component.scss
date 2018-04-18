@@ -1,5 +1,9 @@
 @import '../../../scss/styles.scss';
 
+#aside-menu {
+  height: calc(100% - 50px);
+
+}
 
 nav {
   ul {
@@ -34,10 +38,8 @@ nav {
 
 
 .bg-darken-secondary {
-  background: url(assets/logos/SVG/logo.lluvia.welcome.todorojo.svg) $darken-secondary no-repeat top left fixed;
-  background-size: 60%;
-  background-position-y: 50px;
-  background-position-x: 15px;
+  background : $darken-primary url(assets/logos/SVG/logo.lluvia.welcome.todorojo.svg) 50% 5%/75% no-repeat;
+
 
 
 }
@@ -47,8 +49,11 @@ ul {
   list-style-type: none;
 }
 
-nav ul li a.active {
-  color: $blue;
+nav ul li a {
+  color: $line;
+}
+nav ul li.active a{
+  text-decoration: underline;
 }
 
 .menu-presentation {

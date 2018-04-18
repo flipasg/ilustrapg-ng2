@@ -1,6 +1,11 @@
 @import '../scss/styles.scss';
 * {
     font-family: $font-family-base;
+    color: $line;
+}
+
+html, body {
+    background: $line;
 }
 
 .min-height-100 {

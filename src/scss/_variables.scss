@@ -1,8 +1,13 @@
 $font-family-sans-serif:Verdana,sans-serif;
-$font-family-base: 'RobotoCondensed-Light',$font-family-sans-serif;
-$font-family-title: 'CallingCode',$font-family-sans-serif;
+$font-family-base: 'Oswald-Light',$font-family-sans-serif;
+$font-family-title: 'Oswald-Bold',$font-family-sans-serif;
 $red: #b0385a;
+$line: #FAF0E6;
 $secondary: $red;
 $blue: #45819d;
 $primary: $blue;
 $darken-secondary: darken($red, 5);
+$darken-primary: darken($blue, 15);
+$darken-line: darken($line, 5);
+
+
