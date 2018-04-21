@@ -8,10 +8,10 @@
 	.st2{clip-path:url(#SVGID_6_);fill:#CB355B;}
 	.st3{clip-path:url(#SVGID_8_);fill:#CB355B;}
 	.st4{clip-path:url(#SVGID_10_);fill:#CB355B;}
-	.st5{clip-path:url(#SVGID_12_);fill:#FFFFFF;}
-	.st6{clip-path:url(#SVGID_14_);fill:#FFFFFF;}
-	.st7{clip-path:url(#SVGID_16_);fill:#FFFFFF;}
-	.st8{clip-path:url(#SVGID_18_);fill:#FFFFFF;}
+	.st5{clip-path:url(#SVGID_12_);fill:#FAF0E6;}
+	.st6{clip-path:url(#SVGID_14_);fill:#FAF0E6;}
+	.st7{clip-path:url(#SVGID_16_);fill:#FAF0E6;}
+	.st8{clip-path:url(#SVGID_18_);fill:#FAF0E6;}
 	.st9{clip-path:url(#SVGID_20_);fill:#00819F;}
 	.st10{clip-path:url(#SVGID_22_);}
 	.st11{clip-path:url(#SVGID_24_);fill:#1D0C06;}
@@ -23,7 +23,7 @@
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_15_"  style="overflow:visible;"/>
 	</clipPath>
-	<path style="clip-path:url(#SVGID_2_);fill:#FFFFFF;" d="M14.1,18.3C14.1,18.3,14.1,18.3,14.1,18.3c0,0.4,0,0.7,0,1.1c0,0,0,0,0,0
+	<path style="clip-path:url(#SVGID_2_);fill:#FAF0E6;" d="M14.1,18.3C14.1,18.3,14.1,18.3,14.1,18.3c0,0.4,0,0.7,0,1.1c0,0,0,0,0,0
 		c0,0.2,0,0.4-0.1,0.6c0-0.1,0-0.2,0-0.3C14.1,19.3,14.1,18.8,14.1,18.3 M13.7,20.4c-0.1-0.6-0.2-1.3-0.2-1.9c0-0.3,0-0.6,0-1
 		c0-0.1-0.1-0.1-0.1-0.1c0-0.8,0-1.5,0.1-2.3c0-0.3,0-0.5,0.1-0.8c0,0,0,0.1,0,0.1c0,0.3,0,0.6,0,0.8c0,0.1,0,0.1,0.1,0.1
 		c0.1,0.7,0.2,1.3,0.3,2c0,0,0,0,0,0.1c0,0.8,0,1.5,0,2.3C13.8,20,13.7,20.2,13.7,20.4 M11.4,18.5c0-0.5,0-1,0-1.6
