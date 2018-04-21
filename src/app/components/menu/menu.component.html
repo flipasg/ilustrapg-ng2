@@ -1,63 +1,108 @@
-<div id="aside-menu" class="bg-darken-secondary position-absolute w-75 collapse">
+<aside id="aside-menu" class="bg-darken-secondary bg-rain position-absolute w-75 collapse">
 
   <div class=" menu-presentation">
-    <div class="social-bar d-flex flex-row-reverse">
-      <div class="col-2 p-0">
+    <div class="social-bar d-flex flex-row-reverse p-1">
+      <div class="mr-1 pr-1 pl-1">
         <img src="assets/logos/svg/facebook-white.svg" class="img-fluid" alt="">
       </div>
-      <div class="col-2 p-0">
+      <div class="mr-2 pr-1 pl-1">
         <img src="assets/logos/svg/instagram-white.svg" class="img-fluid" alt="">
       </div>
 
     </div>
+    <div class="contact-presentation d-flex">
+      <div class="col-5 pr-1">
+        <img src="assets/backgrounds/patriciagarciaramirez.1.jpg" alt="" class="img img-fluid rounded-circle">
+      </div>
+      <div class="col-7 p-1">
+        <h1 class="h4 text-uppercase">Patricia Garcia</h1>
+
+        <small>Ilustradora, artista y diseñadora.</small>
+        <p>Más información
+          <i class="fa fa-arrow-down more-information" aria-hidden="true"></i>
+        </p>
+      </div>
+    </div>
   </div>
-  <nav class=" text-white h-75">
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link font-weight-bold section-link" href="#">HOME</a>
+  <nav class="text-white p-2">
+    <ul class="m-0">
+      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
+
+
+        <a class="nav-link d-flex p-0" [routerLink]="['/page','bellabestia']">
+
+
+
+          <span class="col-4 p-0"></span>
+          <span class="col-8 p-0">Bella y Bestia</span>
+        </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link font-weight-bold section-link" href="# ">EDITORIAL</a>
+      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
 
-        <ul>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold group-link" href="#">ADULTO</a>
 
-            <ul>
-              <li class="nav-item">
-                <a class="nav-link" href="#">La voz eslava</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Circe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Narciso</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Medea cómic</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold group-link" href="#">INFANTIL</a>
+        <a class="nav-link d-flex p-0" [routerLink]="['/page','circe']">
 
-            <ul>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Bella y bestia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cuentos clásicos</a>
-              </li>
-            </ul>
-          </li>
-
-        </ul>
-
+          <span class="col-4 p-0"></span>
+          <span class="col-8 p-0">Circe</span>
+        </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link font-weight-bold section-link" href="#">CONTACTO</a>
+      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
+
+        <a class="nav-link d-flex p-0" [routerLink]="['/page','cuentos']">
+
+          <span class="col-4 p-0"></span>
+          <span class="col-8 p-0">Cuentos</span>
+        </a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
+
+        <a class="nav-link d-flex p-0" [routerLink]="['/page','culpables']">
+
+          <span class="col-4 p-0"></span>
+          <span class="col-8 p-0">Culpables</span>
+        </a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
+
+        <a class="nav-link d-flex p-0" [routerLink]="['/page','lavozeslava']">
+
+          <span class="col-4 p-0"></span>
+          <span class="col-8 p-0">La voz eslava</span>
+        </a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
+
+        <a class="nav-link d-flex p-0" [routerLink]="['/page','medeacomic']">
+
+          <span class="col-4 p-0"></span>
+          <span class="col-8 p-0">Medea cómic</span>
+        </a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
+
+        <a class="nav-link d-flex p-0" [routerLink]="['/page','miniaturas']">
+
+          <span class="col-4 p-0"></span>
+          <span class="col-8 p-0">Minituras</span>
+        </a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
+
+        <a class="nav-link d-flex p-0" [routerLink]="['/page','narciso']">
+
+          <span class="col-4 p-0"></span>
+          <span class="col-8 p-0">Narciso</span>
+        </a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
+
+        <a class="nav-link d-flex p-0" [routerLink]="['/page','retratos']">
+
+          <span class="col-4 p-0"></span>
+          <span class="col-8 p-0">Retratos</span>
+        </a>
       </li>
     </ul>
 
   </nav>
-</div>
+</aside>

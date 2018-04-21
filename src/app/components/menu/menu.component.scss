@@ -1,8 +1,6 @@
 @import '../../../scss/styles.scss';
-
 #aside-menu {
-  height: calc(100% - 50px);
-
+  height: $height-wo-header;
 }
 
 nav {
@@ -11,37 +9,22 @@ nav {
       a {
         color: $white;
         font-weight: 500;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        padding: 0.3rem 0rem !important;
         text-decoration: none;
         text-align: left;
-        padding: 0.2rem 1rem;
-
-        &.section-link {
-          font-size: 1.2rem;
-          padding: 0.2rem 1rem;
-
-
-        }
-
-        &.group-link {
-          font-size: 1.1rem;
-          padding: 0.2rem 1rem;
-          padding-top: 0.5rem;
-
-
-        }
-
       }
     }
   }
 }
 
-
 .bg-darken-secondary {
-  background : $darken-primary url(assets/logos/SVG/logo.lluvia.welcome.todorojo.svg) 50% 5%/75% no-repeat;
+  background: url(assets/logos/svg/lluvia.patron.light.svg), $darken-primary;
+}
 
-
-
+h1 {
+  color: $darken-secondary;
+  font-family: $font-family-title !important;
 }
 
 ul {
@@ -52,10 +35,18 @@ ul {
 nav ul li a {
   color: $line;
 }
-nav ul li.active a{
+
+nav ul li.active a {
   text-decoration: underline;
 }
 
-.menu-presentation {
-  height: 25%;
+.social-bar {
+  img {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.more-information {
+  font-size: 0.7rem;
 }
