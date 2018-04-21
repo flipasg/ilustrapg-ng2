@@ -1,6 +1,7 @@
 $font-family-sans-serif:Verdana,sans-serif;
-$font-family-base: 'Oswald-Light',$font-family-sans-serif;
-$font-family-title: 'Oswald-Bold',$font-family-sans-serif;
+$font-family-base: 'Barlow-Light',$font-family-sans-serif;
+$font-family-title: 'Barlow-Bold',$font-family-sans-serif;
+
 $red: #b0385a;
 $line: #FAF0E6;
 $secondary: $red;
@@ -9,5 +10,5 @@ $primary: $blue;
 $darken-secondary: darken($red, 5);
 $darken-primary: darken($blue, 15);
 $darken-line: darken($line, 5);
-
+$height-wo-header: calc(100% - 50px);
 
