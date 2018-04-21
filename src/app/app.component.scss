@@ -11,3 +11,8 @@ html, body {
 .min-height-100 {
     min-height: 100%;
 }
+
+.app-container {
+    height: $height-wo-header;
+    background: $line;
+}
