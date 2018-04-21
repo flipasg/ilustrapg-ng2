@@ -7,7 +7,8 @@
 .navbar button {
     height: 50px;
     width: 50px;
-    background: $darken-primary;
+    background: $darken-primary ;
+
 }
 
 .logo:hover {
@@ -28,4 +29,11 @@
   background-size: 100%;
 
 
+}
+
+.navbar-toggler{
+  img{
+    height: 2rem;
+    width: 2rem;
+  }
 }
