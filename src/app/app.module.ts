@@ -10,6 +10,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 import { MainComponent } from './components/main/main.component';
+import { PageComponent } from './components/page/page.component';
+import { APP_ROUTING } from './app.routes';
+import { PageService } from './services/page.service';
 
 
 @NgModule({
@@ -20,14 +23,16 @@ import { MainComponent } from './components/main/main.component';
     FooterComponent,
     MainpageComponent,
     NavbarComponent,
-    MainComponent
+    MainComponent,
+    PageComponent
   ],
   imports: [
     BrowserModule,
     CollapseModule.forRoot(),
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    APP_ROUTING
   ],
-  providers: [],
+  providers: [PageService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
