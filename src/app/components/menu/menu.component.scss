@@ -1,6 +1,8 @@
 @import '../../../scss/styles.scss';
 #aside-menu {
   height: $height-wo-header;
+  z-index: 1;
+
 }
 
 nav {

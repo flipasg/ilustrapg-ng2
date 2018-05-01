@@ -1,0 +1,21 @@
+@import '../../../scss/styles.scss';
+.my-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row wrap;
+}
+
+.my-gallery figure {
+  padding: 1rem;
+}
+
+.my-gallery figcaption {
+  display: none;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  border-bottom: 1px solid $blue;
+  text-align: center;
+}
