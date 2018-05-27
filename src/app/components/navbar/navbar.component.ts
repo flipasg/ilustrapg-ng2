@@ -10,6 +10,18 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('.overlay').on('click', function () {
+      $('#aside-menu').removeClass('menu-layout');
+      $('.overlay').hide();
+    });
+    $('#nav-toggler').on('click', function () {
+      if ($('#aside-menu').hasClass('menu-layout')) {
+        $('#aside-menu').removeClass('menu-layout');
+        $('.overlay').hide();
+      } else {
+        $('#aside-menu').addClass('menu-layout');
+        $('.overlay').show();
+      }
+    });
   }
-
 }

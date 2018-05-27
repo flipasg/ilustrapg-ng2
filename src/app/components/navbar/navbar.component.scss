@@ -1,4 +1,4 @@
-@import '../../../scss/_variables.scss';
+@import '../../../scss/styles.scss';
 
 .navbar {
     height: 50px;
@@ -7,7 +7,11 @@
 .navbar button {
     height: 50px;
     width: 50px;
-    background: $darken-primary ;
+    background: $darken-primary;
+    @include media-breakpoint-up(md) {
+      display: none;
+    } // Large
+
 
 }
 
@@ -25,7 +29,8 @@
 }
 
 .bg-texture {
-  background: url(assets/backgrounds/header-texture.jpeg) no-repeat center center;
+  background: $darken-secondary no-repeat center center;
+  background-image: url(assets/backgrounds/header-texture.jpeg);
   background-size: 100%;
 
 

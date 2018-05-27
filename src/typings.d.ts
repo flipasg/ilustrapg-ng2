@@ -4,3 +4,5 @@ interface NodeModule {
   id: string;
 }
 declare var PhotoSwipeUI_Default: any;
+declare var PhotoSwipe: any;
+declare var $: any;

@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageComponent } from './components/page/page.component';
 
 const ROUTES: Routes = [
-    { path: 'page/:name', component: PageComponent }
+    { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 NgModule({

@@ -1,5 +1,12 @@
-<main class="container-fluid d-flex p-0 h-100 w-100 min-height-100">
-  <app-menu></app-menu>
-  <app-mainpage class="container-fluid p-0 h-100 w-100 min-height-100 overflow-auto"></app-mainpage>
+<main class="main-container container-fluid p-0 position-relative h-100 overflow-hidden d-flex">
+
+<app-menu id="aside-menu" class="container-fluid col-10 col-sm-8 col-md-5 col-lg-4 col-xl-3 h-100 p-0 m-0 navbar-side"></app-menu>
+
+
+<app-mainpage class="mainpage-container container-fluid p-0 h-100 col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9 overflow-auto"></app-mainpage>
+
+
+<div class="overlay position-absolute h-100 hidden-sm">
+</div>
 
 </main>

@@ -4,7 +4,22 @@
 @import './variables';
 @import "~bootstrap/scss/bootstrap";
 
+
 body {
-    height: 100vh !important;
+  height: 100vh !important;
+  font-size: 1.1rem;
+  overflow: hidden;
+}
+
+.font-barlow-italic {
+  font-family: $font-family-italic;
+}
+
+.font-barlow-bold {
+  font-family: $font-family-title;
+}
+
+.font-barlow-italic-bold {
+  font-family: $font-family-italic-bold;
 }
 

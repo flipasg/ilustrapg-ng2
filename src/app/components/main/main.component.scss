@@ -1,7 +1,70 @@
 @import '../../../scss/styles.scss';
-
 .overflow-auto {
-    overflow: auto;
-    height: $height-wo-header;
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overlay {
+  cursor: pointer;
+  display: none;
+  height: $height-wo-header;
+  background-color: #ccc;
+  opacity: 0.6;
+  z-index: $zindex-fixed - 1;
+  height: $height-wo-header;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  @include media-breakpoint-up(md) {
+    height: 100%;
+  } // Large
 
 }
+
+.menu-layout {
+  position: absolute;
+  -webkit-transform: translateX(0%) !important;
+  -ms-transform: translateX(0%) !important;
+  transform: translateX(0%) !important;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  @include media-breakpoint-up(md) {
+    position: relative;
+    -webkit-transform: translateX(-100%) !important;
+    -ms-transform: translateX(-100%) !important;
+    transform: translateX(-100%) !important;
+  } // Large
+}
+
+.navbar-side {
+  position: absolute;
+  z-index: $zindex-fixed;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  @include media-breakpoint-up(md) {
+    position: relative;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  } // Large
+}
+.mainpage-container {
+  height: $height-wo-header;
+  overflow: auto;
+  @include media-breakpoint-up(lg) {
+    overflow: hidden !important;
+  }
+  @include media-breakpoint-up(md) {
+    height: 100%;
+  }
+}
+
+
+

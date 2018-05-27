@@ -13,6 +13,8 @@ import { MainComponent } from './components/main/main.component';
 import { PageComponent } from './components/page/page.component';
 import { APP_ROUTING } from './app.routes';
 import { PageService } from './services/page.service';
+import { KeyPipe } from './pipes/key.pipe';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { PageService } from './services/page.service';
     MainpageComponent,
     NavbarComponent,
     MainComponent,
-    PageComponent
+    PageComponent,
+    KeyPipe,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +37,7 @@ import { PageService } from './services/page.service';
     APP_ROUTING
   ],
   providers: [PageService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [PageComponent, HomeComponent]
 })
-export class AppModule {}
+export class AppModule { }

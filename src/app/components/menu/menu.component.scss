@@ -1,9 +1,4 @@
 @import '../../../scss/styles.scss';
-#aside-menu {
-  height: $height-wo-header;
-  z-index: 1;
-
-}
 
 nav {
   ul {
@@ -51,4 +46,25 @@ nav ul li.active a {
 
 .more-information {
   font-size: 0.7rem;
+}
+.app-title{
+    font-size: 2rem;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+nav {
+  height: 60%;
+  overflow-y: auto;
+
+}
+
+.app-image{
+  @include media-breakpoint-up(lg) {
+    padding-right: 2rem !important;
+  }
+
 }

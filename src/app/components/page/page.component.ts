@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 import { PageService, PageInformation, PhotoSwipeImage } from '../../services/page.service';
 import { ActivatedRoute } from '@angular/router';
-import PhotoSwipe = require('photoswipe');
 import { Item } from 'photoswipe';
 
 @Component({
@@ -13,36 +12,56 @@ export class PageComponent implements OnInit {
   pswpElement: HTMLElement;
   pageName: string;
   pageInformation: PageInformation;
+  pageId: string;
   @ViewChild('photoSwipe') photoSwipe: ElementRef;
   images: PhotoSwipeImage[] = [];
-  constructor(private _activatedRouter: ActivatedRoute,
-    private _pageService: PageService) { }
+  page: any;
+  proyectMapping: {
+    bellabestia: 2,
+    circe: 3,
+    cuentos: 4,
+    culpables: 5,
+    medeacomic: 6,
+    narciso: 7,
+    retratos: 8,
+    voluntadpalabras: 9,
+    vozeslava: 1
+  };
+
+  constructor(public pageService: PageService) { }
 
   ngOnInit() {
-    this._activatedRouter.params
-      .map((params: any) => params.name)
-      .subscribe((pageName: string) => {
-        this.pageName = pageName;
-        this.pageInformation = this._pageService.getPageInformationByName(pageName);
-        this.images = this._pageService.getPageImagesByName(this.pageName);
-      });
+    this.pageInformation = this.pageService.getPageInformationByName(this.pageName);
+    this.pageId = this.pageInformation.id;
+    this.images = this.pageService.getPageImagesByName(this.pageName);
   }
 
-  openSlideshow() {
+  openSlideshow(photoSwipeImage) {
 
     const options = {
-      index: 0
+      index: this.images.findIndex(photo => photo.src === photoSwipeImage.src)
     };
 
-    const images = <Item[]> this.images;
+    const images = <Item[]>this.images;
 
     // Initializes and opens PhotoSwipe
     const gallery = new PhotoSwipe(this.photoSwipe.nativeElement, PhotoSwipeUI_Default, images, options);
     gallery.init();
   }
 
-  onThumbnailsClick(e) {
-    this.openSlideshow();
+  onThumbnailsClick(photoSwipeImage) {
+    this.openSlideshow(photoSwipeImage);
   }
-
+  changePage(index) {
+    for (const key in this.proyectMapping) {
+      if (this.proyectMapping.hasOwnProperty(key)) {
+        const element = this.proyectMapping[key];
+        if (element == index) {
+          this.pageService.setActivePage(key);
+          return true;
+        }
+      }
+    }
+    return false;
+  }
 }

@@ -2,17 +2,18 @@
 * {
     font-family: $font-family-base;
     color: $line;
+    font-size: 1.1rem;
 }
 
 html, body {
     background: $line;
 }
 
-.min-height-100 {
-    min-height: 100%;
-}
-
 .app-container {
     height: $height-wo-header;
     background: $line;
+    @include media-breakpoint-up(md) {
+      height: 100%;
+    } // Large
+
 }

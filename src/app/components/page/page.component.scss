@@ -1,13 +1,20 @@
 @import '../../../scss/styles.scss';
+.container-fluid {
+  padding: 0 ;
+}
 .my-gallery {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   flex-flow: row wrap;
+  @include media-breakpoint-up(lg) {
+    overflow: auto;
+  }
 }
 
 .my-gallery figure {
-  padding: 1rem;
+  padding: 0.1rem;
+  margin-bottom: 0;
 }
 
 .my-gallery figcaption {
@@ -15,7 +22,143 @@
 }
 
 .page-title {
-  font-size: 2.5rem;
-  border-bottom: 1px solid $blue;
-  text-align: center;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-family: $font-family-title;
+  color: $secondary;
+  @include media-breakpoint-up(lg) {
+    font-size: 3rem;
+    height: auto;
+    padding-left: 3rem;
+  }
 }
+
+.pageinfo-container {
+  height: $height-wo-header;
+  overflow: auto;
+  display: block;
+  @include media-breakpoint-up(lg) {
+    overflow: hidden !important;
+  }
+  @include media-breakpoint-up(md) {}
+  // Large
+}
+
+.page-container {
+  @include media-breakpoint-up(lg) {
+    overflow: hidden !important;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 2rem;
+    flex-direction: row-reverse;
+    height: $height-wo-header;
+  }
+}
+
+.page-description,
+.gallery-container {
+  @include media-breakpoint-up(lg) {
+    display: inline-block !important;
+    vertical-align: top;
+  }
+}
+
+.h-100 {
+  height: 99% !important;
+}
+
+.pageinformation-description-toggler {
+  @include media-breakpoint-up(lg) {
+    display: none !important;
+  }
+}
+
+.pageinformation-description {
+  @include media-breakpoint-up(lg) {
+    display: block !important;
+    overflow: auto !important;
+  }
+}
+
+figure:hover {
+  cursor: pointer;
+}
+
+#vozeslava figure,
+#circe figure,
+#narciso figure {
+  @include media-breakpoint-up(lg) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+.page-information-watermark  {
+  display: none;
+}
+// #vozeslava .page-information-watermark {
+//   display: block;
+//   background: url(assets/pages/vozeslava/vozeslava0.jpg);
+//   background-repeat: no-repeat;
+//   background-size: 20%;
+//   background-position-x: 97%;
+//   background-position-y: 22%;
+//   position: absolute;
+//   max-width: 100%;
+//   top: 0;
+//   left: 0;
+// }
+
+// #circe .page-information-watermark {
+//   display: block;
+
+//   background: url(assets/pages/circe/circe0.jpg);
+//   background-repeat: no-repeat;
+//   background-size: 20%;
+//   background-position-x: 97%;
+//   background-position-y: 22%;
+//   position: absolute;
+//   max-width: 100%;
+//   top: 0;
+//   left: 0;
+// }
+
+// #narciso .page-information-watermark {
+//   display: block;
+
+//   background: url(assets/pages/narciso/narciso0.jpg);
+//   background-repeat: no-repeat;
+//   background-size: 20%;
+//   background-position-x: 97%;
+//   background-position-y: 22%;
+//   position: absolute;
+//   max-width: 100%;
+//   top: 0;
+//   left: 0;
+// }
+
+// #bellabestia .page-information-watermark {
+//   display: block;
+
+//   background: url(assets/pages/bellabestia/bellabestia0.jpg);
+//   background-repeat: no-repeat;
+//   background-size: 12%;
+//   background-position-x: 92%;
+//   background-position-y: 22%;
+//   position: absolute;
+//   max-width: 100%;
+//   top: 0;
+//   left: 0;
+// }
+
+#bellabestia figure.col-lg-4 {
+  flex: 0 0 50% !important;
+  max-width: 50%;
+
+}
+
+#medeacomic figure.col-lg-4 {
+  flex: 0 0 50% !important;
+  max-width: 50%;
+}
+
+

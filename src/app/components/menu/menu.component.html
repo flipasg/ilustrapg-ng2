@@ -1,24 +1,31 @@
-<aside id="aside-menu" class="bg-darken-secondary bg-rain position-absolute w-75 collapse">
+<aside class="bg-darken-secondary bg-rain h-100">
 
   <div class=" menu-presentation">
     <div class="social-bar d-flex flex-row-reverse p-1">
       <div class="mr-1 pr-1 pl-1">
-        <img src="assets/logos/svg/facebook-white.svg" class="img-fluid" alt="">
+        <a href="https://www.facebook.com/ilustrapg" target="_blank">
+          <img src="assets/logos/svg/facebook-white.svg" class="img-fluid" alt="">
+        </a>
       </div>
       <div class="mr-2 pr-1 pl-1">
-        <img src="assets/logos/svg/instagram-white.svg" class="img-fluid" alt="">
+        <a href="https://www.instagram.com/ilustrapg" target="_blank">
+
+          <img src="assets/logos/svg/instagram-white.svg" class="img-fluid" alt="">
+        </a>
       </div>
 
     </div>
     <div class="contact-presentation d-flex">
-      <div class="col-5 pr-1">
+      <div class="app-image col-4 pr-1">
+
         <img src="assets/backgrounds/patriciagarciaramirez.1.jpg" alt="" class="img img-fluid rounded-circle">
       </div>
-      <div class="col-7 p-1">
-        <h1 class="h4 text-uppercase">Patricia Garcia</h1>
+      <div class="col-8 col-sm-9 col-md-9 col-lg-9 col-xl-9 p-1">
+        <h1 class="h4 app-title text-uppercase">{{title}}</h1>
 
-        <small>Ilustradora, artista y diseñadora.</small>
-        <p>Más información
+
+        <small class="app-description">{{subtitle}}</small>
+        <p [hidden]="description==''">Más información
           <i class="fa fa-arrow-down more-information" aria-hidden="true"></i>
         </p>
       </div>
@@ -26,83 +33,18 @@
   </div>
   <nav class="text-white p-2">
     <ul class="m-0">
-      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
 
-
-        <a class="nav-link d-flex p-0" [routerLink]="['/page','bellabestia']">
+      <li class="nav-item" (click)="pageChange(page)" [class.active]="activePage==page" *ngFor="let page of pages | key">
 
 
 
-          <span class="col-4 p-0"></span>
-          <span class="col-8 p-0">Bella y Bestia</span>
-        </a>
-      </li>
-      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
+        <a class="nav-link d-flex p-0">
+          <span class="offset-4 col-8 p-0">{{pages[page].shortTitle}}</span>
 
-
-        <a class="nav-link d-flex p-0" [routerLink]="['/page','circe']">
-
-          <span class="col-4 p-0"></span>
-          <span class="col-8 p-0">Circe</span>
-        </a>
-      </li>
-      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
-
-        <a class="nav-link d-flex p-0" [routerLink]="['/page','cuentos']">
-
-          <span class="col-4 p-0"></span>
-          <span class="col-8 p-0">Cuentos</span>
-        </a>
-      </li>
-      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
-
-        <a class="nav-link d-flex p-0" [routerLink]="['/page','culpables']">
-
-          <span class="col-4 p-0"></span>
-          <span class="col-8 p-0">Culpables</span>
-        </a>
-      </li>
-      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
-
-        <a class="nav-link d-flex p-0" [routerLink]="['/page','lavozeslava']">
-
-          <span class="col-4 p-0"></span>
-          <span class="col-8 p-0">La voz eslava</span>
-        </a>
-      </li>
-      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
-
-        <a class="nav-link d-flex p-0" [routerLink]="['/page','medeacomic']">
-
-          <span class="col-4 p-0"></span>
-          <span class="col-8 p-0">Medea cómic</span>
-        </a>
-      </li>
-      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
-
-        <a class="nav-link d-flex p-0" [routerLink]="['/page','miniaturas']">
-
-          <span class="col-4 p-0"></span>
-          <span class="col-8 p-0">Minituras</span>
-        </a>
-      </li>
-      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
-
-        <a class="nav-link d-flex p-0" [routerLink]="['/page','narciso']">
-
-          <span class="col-4 p-0"></span>
-          <span class="col-8 p-0">Narciso</span>
-        </a>
-      </li>
-      <li class="nav-item" data-toggle="collapse" data-target="#aside-menu" aria-controls="aside-menu" routerLinkActive="active">
-
-        <a class="nav-link d-flex p-0" [routerLink]="['/page','retratos']">
-
-          <span class="col-4 p-0"></span>
-          <span class="col-8 p-0">Retratos</span>
         </a>
       </li>
     </ul>
 
   </nav>
+
 </aside>
