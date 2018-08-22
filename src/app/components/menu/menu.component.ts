@@ -13,9 +13,10 @@ export class MenuComponent implements OnInit {
   }
 
   activePage = 'bellabestia';
-  title = 'Patricia Garcia';
+  title = 'Patricia Garcia Ramirez';
   subtitle = 'Ilustración y diseño gráfico.';
-  description = '';
+  phone = '678.10.28.83';
+  email = 'ilustrapg@gmail.com';
   constructor(private _pageService: PageService) {
 
   }

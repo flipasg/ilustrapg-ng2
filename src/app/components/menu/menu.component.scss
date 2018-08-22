@@ -1,40 +1,54 @@
 @import '../../../scss/styles.scss';
-
 nav {
+  height: calc(10 * 51px);
+  display: flex;
+  background: $linen;
+  overflow-y: auto;
+  max-height: calc(10 * 51px);
   ul {
+    padding: 0px;
+    list-style-type: none;
     li {
-      a {
-        color: $white;
-        font-weight: 500;
-        font-size: 1.2rem;
-        padding: 0.3rem 0rem !important;
+      .nav-link {
+        color: $red;
+        font-family: 'Barlow-Bold';
+        font-size: 1.6rem;
         text-decoration: none;
-        text-align: left;
+        text-align: right;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: right;
+        width: 100%;
+        padding-right: 15px !important;
+        line-height: 1.6em;
+        &:active,
+        &:hover,
+        &:link,
+        &:visited,
+        &:focus {
+          text-decoration: none !important;
+          text-decoration-line: none !important;
+          text-decoration-style: unset !important;
+        }
+      }
+      &.active {
+        background: $darken-secondary no-repeat center center;
+        background-image: url(assets/backgrounds/header-texture.jpeg);
+        background-size: 100%;
+        .nav-link {
+          background: $darken-secondary no-repeat center center;
+          background-image: url(assets/backgrounds/header-texture.jpeg);
+          background-size: 100%;
+          color: $white;
+        }
       }
     }
   }
 }
 
-.bg-darken-secondary {
-  background: url(assets/logos/svg/lluvia.patron.light.svg), $darken-primary;
-}
-
 h1 {
   color: $darken-secondary;
   font-family: $font-family-title !important;
-}
-
-ul {
-  padding: 0px;
-  list-style-type: none;
-}
-
-nav ul li a {
-  color: $line;
-}
-
-nav ul li.active a {
-  text-decoration: underline;
 }
 
 .social-bar {
@@ -44,27 +58,45 @@ nav ul li.active a {
   }
 }
 
-.more-information {
-  font-size: 0.7rem;
-}
-.app-title{
-    font-size: 2rem;
-}
-
 .nav-item:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-nav {
-  height: 60%;
-  overflow-y: auto;
-
+.menu-presentation {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 
-.app-image{
-  @include media-breakpoint-up(lg) {
-    padding-right: 2rem !important;
-  }
+.app-title {
+  color: $red;
+}
 
+.app-subtitle {
+  font-family: 'Barlow-BoldItalic';
+  color: $red;
+}
+
+.app-email,
+.app-phone {
+  font-family: 'Barlow-Bold';
+}
+
+.app-subtitle,
+.app-email,
+.app-phone,
+.app-title {
+  text-align: right;
+  display: block;
+}
+
+.app-email,
+.app-phone {
+  display: none;
+}
+
+.page-logo {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  } // Large
 }

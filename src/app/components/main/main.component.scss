@@ -22,7 +22,6 @@
   @include media-breakpoint-up(md) {
     height: 100%;
   } // Large
-
 }
 
 .menu-layout {
@@ -48,13 +47,18 @@
   transform: translateX(-100%);
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
+  background: $linen;
   @include media-breakpoint-up(md) {
     position: relative;
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
     transform: translateX(0%);
   } // Large
+  @include media-breakpoint-up(lg) {
+    max-width: 325px; //padding-top: 5.5rem !important;
+  } // Large
 }
+
 .mainpage-container {
   height: $height-wo-header;
   overflow: auto;
@@ -66,5 +70,9 @@
   }
 }
 
-
-
+.page-logo {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}

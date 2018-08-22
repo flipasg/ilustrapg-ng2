@@ -1,13 +1,14 @@
 @import '../../../scss/styles.scss';
 .container-fluid {
-  padding: 0 ;
+  padding: 0;
 }
+
 .my-gallery {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   flex-flow: row wrap;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     overflow: auto;
   }
 }
@@ -23,13 +24,14 @@
 
 .page-title {
   font-size: 1.7rem;
-  text-transform: uppercase;
   font-family: $font-family-title;
-  color: $secondary;
-  @include media-breakpoint-up(lg) {
+  color: $blue;
+  @include media-breakpoint-up(md) {
     font-size: 3rem;
     height: auto;
-    padding-left: 3rem;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-left: 9%;
   }
 }
 
@@ -37,15 +39,17 @@
   height: $height-wo-header;
   overflow: auto;
   display: block;
-  @include media-breakpoint-up(lg) {
-    overflow: hidden !important;
+  @include media-breakpoint-up(xl) {
+    height: 100%;
+    display: flex;
+    justify-content: center;
   }
   @include media-breakpoint-up(md) {}
   // Large
 }
 
 .page-container {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     overflow: hidden !important;
     margin: 0 auto;
     height: 100%;
@@ -57,9 +61,16 @@
 
 .page-description,
 .gallery-container {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     display: inline-block !important;
     vertical-align: top;
+  }
+}
+
+.page-description {
+  @include media-breakpoint-up(xl) {
+    max-height: calc(100% - 5.5rem);
+    overflow-y: auto;
   }
 }
 
@@ -68,13 +79,13 @@
 }
 
 .pageinformation-description-toggler {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     display: none !important;
   }
 }
 
 .pageinformation-description {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     display: block !important;
     overflow: auto !important;
   }
@@ -92,9 +103,11 @@ figure:hover {
     max-width: 50%;
   }
 }
-.page-information-watermark  {
+
+.page-information-watermark {
   display: none;
 }
+
 // #vozeslava .page-information-watermark {
 //   display: block;
 //   background: url(assets/pages/vozeslava/vozeslava0.jpg);
@@ -107,10 +120,8 @@ figure:hover {
 //   top: 0;
 //   left: 0;
 // }
-
 // #circe .page-information-watermark {
 //   display: block;
-
 //   background: url(assets/pages/circe/circe0.jpg);
 //   background-repeat: no-repeat;
 //   background-size: 20%;
@@ -121,10 +132,8 @@ figure:hover {
 //   top: 0;
 //   left: 0;
 // }
-
 // #narciso .page-information-watermark {
 //   display: block;
-
 //   background: url(assets/pages/narciso/narciso0.jpg);
 //   background-repeat: no-repeat;
 //   background-size: 20%;
@@ -135,10 +144,8 @@ figure:hover {
 //   top: 0;
 //   left: 0;
 // }
-
 // #bellabestia .page-information-watermark {
 //   display: block;
-
 //   background: url(assets/pages/bellabestia/bellabestia0.jpg);
 //   background-repeat: no-repeat;
 //   background-size: 12%;
@@ -149,16 +156,44 @@ figure:hover {
 //   top: 0;
 //   left: 0;
 // }
-
-#bellabestia figure.col-lg-4 {
-  flex: 0 0 50% !important;
-  max-width: 50%;
-
+#bellabestia figure.col-lg-3 {
+  @include media-breakpoint-up(xl) {
+    flex: 0 0 30% !important;
+    max-width: 30%;
+  }
 }
 
-#medeacomic figure.col-lg-4 {
-  flex: 0 0 50% !important;
-  max-width: 50%;
+#medeacomic figure.col-lg-3 {
+  @include media-breakpoint-up(xl) {
+    flex: 0 0 35% !important;
+    max-width: 35%;
+  }
 }
 
+#circe figure.col-lg-3 {
+  @include media-breakpoint-up(xl) {
+    flex: 0 0 35% !important;
+    max-width: 35%;
+  }
+}
 
+#narciso figure.col-lg-3 {
+  @include media-breakpoint-up(xl) {
+    flex: 0 0 30% !important;
+    max-width: 30%;
+  }
+}
+
+#culpables figure.col-lg-3 {
+  @include media-breakpoint-up(xl) {
+    flex: 0 0 30% !important;
+    max-width: 30%;
+  }
+}
+
+#voluntadpalabras figure.col-lg-3 {
+  @include media-breakpoint-up(xl) {
+    flex: 0 0 30% !important;
+    max-width: 30%;
+  }
+}

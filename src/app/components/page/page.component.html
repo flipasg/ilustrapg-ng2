@@ -9,7 +9,7 @@
   </div>
   <div class="pageinfo-container container-fluid">
 
-    <div class="text-justify page-description col-12 offset-lg-1 col-lg-5 col-xl-4">
+    <div class="text-justify page-description col-12 col-xl-4 pr-0">
 
 
       <div class="font-barlow-italic">
@@ -35,9 +35,9 @@
 
         {{!pageInformation.preview?'Leer más':'Leer menos'}} &raquo;</p>
     </div>
-    <div class="gallery-container col-12 col-lg-5">
-      <div class="my-gallery col-12">
-        <figure class="col-6 col-lg-4" *ngFor="let image of images" (click)="onThumbnailsClick(image)">
+    <div class="gallery-container col-12 col-xl-6">
+      <div class="my-gallery col-12 p-0">
+        <figure class="col-6 col-lg-3" *ngFor="let image of images" (click)="onThumbnailsClick(image)">
 
 
           <a class="d-block">

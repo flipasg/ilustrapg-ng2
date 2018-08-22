@@ -5,13 +5,13 @@ $font-family-italic: 'Barlow-Italic',$font-family-sans-serif;
 $font-family-italic-bold: 'Barlow-BoldItalic',$font-family-sans-serif;
 
 $red: #b0385a;
-$line: #FAF0E6;
+$linen: #FAF0E6;
 $secondary: $red;
 $blue: #45819d;
 $primary: $blue;
 $darken-secondary: darken($red, 5);
 $darken-primary: darken($blue, 15);
-$darken-line: darken($line, 5);
+$darken-linen: darken($linen, 5);
 $header-height: 50;
 $height-wo-header: calc(100% - 50px);
 

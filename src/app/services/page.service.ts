@@ -25,6 +25,7 @@ export interface PagesInformation {
   circe: PageInformation;
   cuentos: PageInformation;
   culpables: PageInformation;
+  figuras: PageInformation;
   vozeslava: PageInformation;
   medeacomic: PageInformation;
   narciso: PageInformation;
@@ -57,7 +58,7 @@ export class PageService {
       introduction: `<span>"Recordó entonces su sueño y corrió por el jardín hacia el estanque junto al cual lo viera en sueños. Allí encontró a la pobre Bestia sobre la hierba, perdido el conocimiento, y pensó que había muerto. Sin el menor asomo de horror se dejó caer a su lado, y al sentir que aún le latía el corazón, tomó un poco de agua del estanque y le roció la cabeza."</span>`,
       description: `<span>Proyecto final del curso sobre ilustración infantil impartido por Adolfo Serra. Buscando enfatizar el antagonismo de los dos personajes principales, las ilustraciones están principalmente  en dos colores pasteles, azul y rosa.</span>
 <span>Contrarrestando lo naif de los tonos, el dibujo, busca ser nervioso y expresivo sin resultar agresivo, sobretodo en el personaje de la bestia. La estética general quiere huir de infantilismos ya que el texto que se ilustra es el original de Jeanne-Marie Leprince de Beaumont. </span>`,
-      numberOfImages: 4
+      numberOfImages: 6
     },
     circe: {
       preview: false,
@@ -65,9 +66,9 @@ export class PageService {
       title: 'Circe',
       shortTitle: 'Circe',
       introduction: `"<span>Yo me acuerdo mal de Delia, pero era fina y rubia, demasiado lenta en sus gestos y usaba vestidos claros con faldas de vuelo libre. Mario creyó un tiempo que la gracia de Delia y sus vestidos apoyaban el odio de la gente. Se lo dijo a Madre Celeste: La odian porque no es chusma como ustedes, como yo mismo."</span>`,
-      description: `<span>Libro ilustrado incluido en el proyecto final del ciclo Diseño y edición que ilustra el relato de Cortázar. Siempre oscilando entre lo clásico y lo moderno, Cortázar narra con este cuento la desventura de Delia con sus novios, descubriéndose finalmente como es el verdadero carácter de la que en apariencia es cándida y amable.</span>
-<span>La ilustración pretende centrarse en el carácter de la protagonista, por ello, es la única figura dibujada a mano, ya que el resto son fotografías aunadas mediante collage digital. Por otro lado, quieren contar la trasformación de este personaje, que si bien en principio se muestra como pura y dócil, finalmente se la descubre como mujer fatal, por ello, las ilustraciones van desde un tono poético y sereno, al principio, en tonos azulados y marrones, para concluir con un estilo gráfico rozando lo bizarro donde predominan el verde o el naranja.</span>`,
-      numberOfImages: 5
+      description: `<span>Libro ilustrado incluido en el proyecto final del ciclo "Diseño y edición" que ilustra el relato de Cortázar. Siempre oscilando entre lo clásico y lo moderno, Cortázar narra con este cuento la desventura de Delia con sus novios, descubriéndose finalmente como es el verdadero carácter de la que en apariencia es cándida y amable.</span>
+<br><span>La ilustración pretende centrarse en el carácter de la protagonista, por ello, es la única figura dibujada a mano, ya que el resto son fotografías aunadas mediante collage digital. Por otro lado, quieren contar la trasformación de este personaje, que si bien en principio se muestra como pura y dócil, finalmente se la descubre como mujer fatal, por ello, las ilustraciones van desde un tono poético y sereno, al principio, en tonos azulados y marrones, para concluir con un estilo gráfico rozando lo bizarro donde predominan el verde o el naranja.</span>`,
+      numberOfImages: 6
     },
     cuentos: {
       preview: false,
@@ -83,9 +84,18 @@ export class PageService {
       id: 'culpables',
       title: 'Culpables',
       shortTitle: 'Culpables',
-      introduction: `<span>"Serie de retratos a figuras vinculantes en el ámbito de las diferentes disciplinas artísticas."</span>`,
-      description: ``,
+      introduction: `<span>"Make a grave for the unknown soldier, nestled in your hollow shoulder" [Jim Morrison]</span>`,
+      description: `<span>Serie de retratos a figuras vinculantes en el ámbito de las diferentes disciplinas artísticas.</span>`,
       numberOfImages: 6
+    },
+    figuras: {
+      preview: false,
+      id: 'figuras',
+      title: 'Figuras',
+      shortTitle: 'Figuras',
+      introduction: `<span>"Encuentra carne sobre los huesos" [Dylan Thomas]</span>`,
+      description: `<span>Serie de veintidós dibujos a pastel sobre papel kraft DIN A4 realizados durante las sesiones de dibujo con modelo vivo. Son apuntes rápidos de entre 5-10 minutos que buscan desarrollar formas alternativas.</span>`,
+      numberOfImages: 12
     },
     medeacomic: {
       preview: false,
@@ -105,15 +115,15 @@ export class PageService {
       introduction: `<span>"Yo dije razón de ser, ¿no? Hablamos, juntos. Tú estabas y escarlatas redondas. Tu himen ronco desabrochándome, deliciosa amargura. Hablamos sin razón y gemías, gemías ruidoso sin razón. Saboreas tú la luz que chorrea de los sobacos de las negras, esbeltas, largas cigüeñas con pico de negra y se caen, cayeron lejos ellas, las luciérnagas y tú mimando mi tristeza. Aún vacías con tu hedor las noches. Una escultura azul y sabes que ronco. Respondo con pies, respondo con respondo; respondo, respondo con autoridad a la lluvia ausente de tus ojos y me odian tus no, tus me odian, tus entrañas."</span>`,
       description: `<span>Proyecto no editado que ilustra un texto propio. Reinterpreta libremente el mito grecolatino de Narciso, que sirve de pretexto para construir un drama poético entorno a la personalidad, la soledad, el proceso creativo y/o la perspectiva. En esencia, es una tragedia cuyos personajes expresan la deconstrucción del ego en clave teatral y poética.</span>
 <span>Las ilustraciones buscan un equilibrio entre diferentes tonos, desde lo arquetípica y ridículamente poético e infantil, hasta lo más expresivo, confluyendo así el dibujo a línea con manchas arrastradas en colores limpios y brillantes</span>`,
-      numberOfImages: 7
+      numberOfImages: 8
     },
     retratos: {
       preview: false,
       id: 'retratos',
       title: 'Retratos personales',
       shortTitle: 'Retratos personales',
-      introduction: '<span>"Retratos por encargo en pequeño formato, realizados en técnica mixta.</span>',
-      description: ``,
+      introduction: '<span>"Mis retratos dicen más de mí que de la gente a la que fotografío" [Richard Avedon]</span>',
+      description: `<span>Retratos por encargo en pequeño formato, realizados en técnica mixta.</span>`,
       numberOfImages: 7
     },
     voluntadpalabras: {
@@ -134,7 +144,7 @@ export class PageService {
       introduction: `<span>"Su voz era ceniza. El humo se frotó contra mis parpados. Soy la mentirosa con aspecto de niña destetada. El tango de su boca negra se esparce entre mis nudillos y quiero escucharte, tus sombras acunan el veneno sonrojado de mis mejillas, solo quiero escucharte, sosteniendo la pernera de tus venas lacradas. ¿Salimos? De este cabaret enlutado con tus ojos de neón. Quiero sostenerte del brazo pero estoy en tu casa, una playa debajo y el humo varado sobre mis costillas...Todavía puede cantar otra noche con más arena entre los ojos. Y espero que olvide que yo soy de allí, que entre mi boca y sus versos se posan mil golondrinas que nos roban el azúcar de las pestañas." </span>`,
       description: `<span>Fanzine presentado en la feria de autoedición FUGAZ de Vitoria-Gasteiz en 2015. Los dibujos ilustran un texto propio.</span>
 <span>Son ilustraciones en blanco y negro donde prima la línea y la sencillez buscando compensar el colorido y barroquismo de las propias imágenes del texto. El cuento trata sobre el trascurso de una noche en un local y lo que allí busca la protagonista, alternando narradores en tercera y primera persona.</span>`,
-      numberOfImages: 5
+      numberOfImages: 6
     }
   };
   _activePage = new Subject<PageInformation>();

@@ -1,45 +1,49 @@
 <aside class="bg-darken-secondary bg-rain h-100">
+  <div class="page-logo col-md-7 col-lg-8 mx-auto">
 
-  <div class=" menu-presentation">
-    <div class="social-bar d-flex flex-row-reverse p-1">
-      <div class="mr-1 pr-1 pl-1">
-        <a href="https://www.facebook.com/ilustrapg" target="_blank">
-          <img src="assets/logos/svg/facebook-white.svg" class="img-fluid" alt="">
-        </a>
+    <div class="hidden-md-down">
+
+      <a href="">
+
+        <img src="assets/logos/svg/logo.lluvia.welcome.svg" class="img-fluid" alt="">
+
+      </a>
+    </div>
+
+  </div>
+  <div class=" menu-presentation pb-2">
+    <div class="contact-presentation container-fluid p-0">
+      <div class="col-12">
+        <h1 class="h4 app-title text-uppercase m-0">{{title}}</h1>
+        <span class="app-subtitle">{{subtitle}}</span>
+        <span class="app-email">{{email}}</span>
+        <span class="app-phone">{{phone}}</span>
       </div>
+    </div>
+    <div class="social-bar d-flex flex-row-reverse">
       <div class="mr-2 pr-1 pl-1">
         <a href="https://www.instagram.com/ilustrapg" target="_blank">
 
-          <img src="assets/logos/svg/instagram-white.svg" class="img-fluid" alt="">
+          <img src="assets/logos/svg/instagram.svg" class="img-fluid" alt="">
+        </a>
+      </div>
+      <div class="">
+        <a href="https://www.facebook.com/ilustrapg" target="_blank">
+          <img src="assets/logos/svg/facebook.svg" class="img-fluid" alt="">
         </a>
       </div>
 
     </div>
-    <div class="contact-presentation d-flex">
-      <div class="app-image col-4 pr-1">
 
-        <img src="assets/backgrounds/patriciagarciaramirez.1.jpg" alt="" class="img img-fluid rounded-circle">
-      </div>
-      <div class="col-8 col-sm-9 col-md-9 col-lg-9 col-xl-9 p-1">
-        <h1 class="h4 app-title text-uppercase">{{title}}</h1>
-
-
-        <small class="app-description">{{subtitle}}</small>
-        <p [hidden]="description==''">Más información
-          <i class="fa fa-arrow-down more-information" aria-hidden="true"></i>
-        </p>
-      </div>
-    </div>
   </div>
-  <nav class="text-white p-2">
-    <ul class="m-0">
+  <nav class="text-white ">
+    <ul class="col-12 m-0">
 
       <li class="nav-item" (click)="pageChange(page)" [class.active]="activePage==page" *ngFor="let page of pages | key">
 
 
 
-        <a class="nav-link d-flex p-0">
-          <span class="offset-4 col-8 p-0">{{pages[page].shortTitle}}</span>
+        <a class="nav-link p-0">{{pages[page].shortTitle}}
 
         </a>
       </li>
