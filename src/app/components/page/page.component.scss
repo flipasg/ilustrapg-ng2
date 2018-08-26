@@ -197,3 +197,28 @@ figure:hover {
     max-width: 30%;
   }
 }
+
+.contact-info-container {
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contact-image-container {
+  width: 50%;
+  min-width: 132px;
+  @include media-breakpoint-up(xl) {
+    width: 100%;
+  }
+}
+
+.contact-alphanumericinfo-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  @include media-breakpoint-up(xl) {
+    width: 100%;
+  }
+}

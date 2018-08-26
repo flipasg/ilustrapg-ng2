@@ -1,0 +1,52 @@
+<div id="{{pageInformation.id}}" class="page-container h-100 container-fluid text-primary">
+  <div class="page-information-watermark h-100 w-100"></div>
+  <div class="container-fluid title-container">
+    <h3 class="h3 page-title h3 page-title col-12 pt-1">{{pageInformation.title}}
+
+    </h3>
+
+
+  </div>
+  <div class="pageinfo-container container-fluid flex-row-reverse">
+
+    <div class="contact-info-container col-12 col-xl-4 pr-0 d-flex">
+      <div class="contact-image-container">
+        <figure>
+          <img class="img-fluid border-0" src="assets/contact/contacto.ilustracion.png" alt="Contact, Patricia Garcia Ramirez, ilustrapg, flechas, lluvia">
+        </figure>
+      </div>
+      <div class="contact-alphanumericinfo-container p-2">
+
+        <div class="social-bar d-flex flex-row-reverse">
+          <div class="">
+            <a href="https://www.instagram.com/ilustrapg" target="_blank">
+
+              <img src="assets/logos/svg/instagram.svg" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="">
+            <a href="https://www.facebook.com/ilustrapg" target="_blank">
+              <img src="assets/logos/svg/facebook.svg" class="img-fluid" alt="">
+            </a>
+          </div>
+
+        </div>
+        <div class="app-phone-container">
+          <span class="app-title app-phone d-block text-right">{{phone}}</span>
+        </div>
+        <div class="app-email-container">
+          <span class="app-title app-email d-block text-right">{{email}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="text-justify page-description col-12 col-xl-6 p-2">
+      <div class="font-barlow">
+        <p innerHTML="{{pageInformation.introduction}}"></p>
+
+      </div>
+      <div class="pageinformation-description " id="{{pageInformation.id + '-preview' }}">
+        <p innerHTML="{{pageInformation.description}}"></p>
+      </div>
+    </div>
+  </div>
+</div>

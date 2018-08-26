@@ -15,6 +15,7 @@ import { APP_ROUTING } from './app.routes';
 import { PageService } from './services/page.service';
 import { KeyPipe } from './pipes/key.pipe';
 import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { HomeComponent } from './components/home/home.component';
     MainComponent,
     PageComponent,
     KeyPipe,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +40,6 @@ import { HomeComponent } from './components/home/home.component';
   ],
   providers: [PageService],
   bootstrap: [AppComponent],
-  entryComponents: [PageComponent, HomeComponent]
+  entryComponents: [PageComponent, HomeComponent, ContactComponent]
 })
 export class AppModule { }

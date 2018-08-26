@@ -79,7 +79,10 @@ h1 {
 
 .app-email,
 .app-phone {
-  font-family: 'Barlow-Bold';
+  font-size: 1.5rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 2rem;
+  }
 }
 
 .app-subtitle,
@@ -99,4 +102,8 @@ h1 {
   @include media-breakpoint-down(sm) {
     display: none;
   } // Large
+}
+
+a.contant-link {
+  font-size: 1.5rem;
 }

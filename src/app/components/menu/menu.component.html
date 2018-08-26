@@ -16,8 +16,9 @@
       <div class="col-12">
         <h1 class="h4 app-title text-uppercase m-0">{{title}}</h1>
         <span class="app-subtitle">{{subtitle}}</span>
-        <span class="app-email">{{email}}</span>
-        <span class="app-phone">{{phone}}</span>
+        <span class="nav-item" (click)="openContact()">
+          <a class="nav-link text-right p-0 contant-link">{{contact.shortTitle}} &raquo;</a>
+        </span>
       </div>
     </div>
     <div class="social-bar d-flex flex-row-reverse">

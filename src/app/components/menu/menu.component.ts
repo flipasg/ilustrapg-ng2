@@ -12,11 +12,13 @@ export class MenuComponent implements OnInit {
     return this._pageService.getPagesInformation();
   }
 
-  activePage = 'bellabestia';
+  get contact(): any {
+    return this._pageService.getContactInformation();
+  }
+
+  activePage = '';
   title = 'Patricia Garcia Ramirez';
   subtitle = 'Ilustración y diseño gráfico.';
-  phone = '678.10.28.83';
-  email = 'ilustrapg@gmail.com';
   constructor(private _pageService: PageService) {
 
   }
@@ -26,7 +28,12 @@ export class MenuComponent implements OnInit {
       this.activePage = activePage.id;
       $('#aside-menu').removeClass('menu-layout');
       $('.overlay').hide();
-
+      if (activePage.id == 'contact') {
+        $('.contant-link').css('font-family', 'Barlow-Bold');
+      } else {
+        $('.contant-link').css('font-family', 'Barlow-Light');
+      }
+      $('.contant-link').css('text-decoration', 'none');
     });
   }
 
@@ -34,4 +41,7 @@ export class MenuComponent implements OnInit {
     this._pageService.setActivePage(page);
   }
 
+  openContact() {
+    this._pageService.setContactActive();
+  }
 }

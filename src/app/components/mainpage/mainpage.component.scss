@@ -1,0 +1,17 @@
+@import '../../../scss/styles.scss';
+.home-container {
+  height: $height-wo-header;
+  overflow: hidden;
+  display: block;
+  @include media-breakpoint-up(xl) {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  @include media-breakpoint-up(md) {}
+  // Large
+}
+
+.home-title {
+  font-size: 3rem;
+}
