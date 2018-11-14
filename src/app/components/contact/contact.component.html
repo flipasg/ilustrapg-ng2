@@ -1,4 +1,4 @@
-<div id="{{pageInformation.id}}" class="page-container h-100 container-fluid text-primary">
+<div [@state]="visibility" (@state.done)="animationDone($event)" id="{{pageInformation.id}}" class="page-container h-100 container-fluid text-primary">
   <div class="page-information-watermark h-100 w-100"></div>
   <div class="container-fluid title-container">
     <h3 class="h3 page-title h3 page-title col-12 pt-1">{{pageInformation.title}}

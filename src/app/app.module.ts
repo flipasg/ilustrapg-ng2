@@ -16,6 +16,7 @@ import { PageService } from './services/page.service';
 import { KeyPipe } from './pipes/key.pipe';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { ContactComponent } from './components/contact/contact.component';
     BrowserModule,
     CollapseModule.forRoot(),
     BsDropdownModule.forRoot(),
-    APP_ROUTING
+    APP_ROUTING,
+    BrowserAnimationsModule
   ],
   providers: [PageService],
   bootstrap: [AppComponent],

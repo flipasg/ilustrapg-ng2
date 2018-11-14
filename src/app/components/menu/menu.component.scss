@@ -1,13 +1,16 @@
 @import '../../../scss/styles.scss';
+
 nav {
   height: calc(10 * 51px);
   display: flex;
   background: $linen;
   overflow-y: auto;
-  max-height: calc(10 * 51px);
+  max-height: calc(100% - 152px);
+
   ul {
     padding: 0px;
     list-style-type: none;
+
     li {
       .nav-link {
         color: $red;
@@ -21,6 +24,7 @@ nav {
         width: 100%;
         padding-right: 15px !important;
         line-height: 1.6em;
+
         &:active,
         &:hover,
         &:link,
@@ -31,10 +35,12 @@ nav {
           text-decoration-style: unset !important;
         }
       }
+
       &.active {
         background: $darken-secondary no-repeat center center;
         background-image: url(assets/backgrounds/header-texture.jpeg);
         background-size: 100%;
+
         .nav-link {
           background: $darken-secondary no-repeat center center;
           background-image: url(assets/backgrounds/header-texture.jpeg);
@@ -43,6 +49,10 @@ nav {
         }
       }
     }
+  }
+
+  @include media-breakpoint-up(md) {
+    max-height: calc(100% - 350px);
   }
 }
 
@@ -69,17 +79,27 @@ h1 {
 }
 
 .app-title {
-  color: $red;
+  color: $blue;
 }
 
 .app-subtitle {
   font-family: 'Barlow-BoldItalic';
-  color: $red;
+  color: $blue;
+}
+
+a.contact-link {
+  font-family: 'Barlow-Bold';
+  color: $blue;
+
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 .app-email,
 .app-phone {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+
   @include media-breakpoint-up(lg) {
     font-size: 2rem;
   }
@@ -101,7 +121,9 @@ h1 {
 .page-logo {
   @include media-breakpoint-down(sm) {
     display: none;
-  } // Large
+  }
+
+  // Large
 }
 
 a.contant-link {

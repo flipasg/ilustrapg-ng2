@@ -28,12 +28,10 @@ export class MenuComponent implements OnInit {
       this.activePage = activePage.id;
       $('#aside-menu').removeClass('menu-layout');
       $('.overlay').hide();
-      if (activePage.id == 'contact') {
-        $('.contant-link').css('font-family', 'Barlow-Bold');
-      } else {
-        $('.contant-link').css('font-family', 'Barlow-Light');
-      }
       $('.contant-link').css('text-decoration', 'none');
+      if (activePage.id == 'contact') {
+        $('.contant-link').css('text-decoration', 'underline');
+      }
     });
   }
 

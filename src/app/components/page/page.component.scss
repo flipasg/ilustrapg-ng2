@@ -1,4 +1,5 @@
 @import '../../../scss/styles.scss';
+
 .container-fluid {
   padding: 0;
 }
@@ -8,6 +9,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   flex-flow: row wrap;
+
   @include media-breakpoint-up(xl) {
     overflow: auto;
   }
@@ -26,10 +28,12 @@
   font-size: 1.7rem;
   font-family: $font-family-title;
   color: $blue;
+
   @include media-breakpoint-up(md) {
     font-size: 3rem;
     height: auto;
   }
+
   @include media-breakpoint-up(lg) {
     padding-left: 9%;
   }
@@ -39,12 +43,15 @@
   height: $height-wo-header;
   overflow: auto;
   display: block;
+
   @include media-breakpoint-up(xl) {
     height: 100%;
     display: flex;
     justify-content: center;
   }
+
   @include media-breakpoint-up(md) {}
+
   // Large
 }
 
@@ -69,7 +76,7 @@
 
 .page-description {
   @include media-breakpoint-up(xl) {
-    max-height: calc(100% - 5.5rem);
+    max-height: calc(100% - 4.5rem);
     overflow-y: auto;
   }
 }
@@ -208,6 +215,7 @@ figure:hover {
 .contact-image-container {
   width: 50%;
   min-width: 132px;
+
   @include media-breakpoint-up(xl) {
     width: 100%;
   }
@@ -218,6 +226,7 @@ figure:hover {
   justify-content: center;
   flex-direction: column;
   width: 50%;
+
   @include media-breakpoint-up(xl) {
     width: 100%;
   }

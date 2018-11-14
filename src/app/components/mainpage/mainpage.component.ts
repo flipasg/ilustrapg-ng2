@@ -28,7 +28,19 @@ export class MainpageComponent implements OnInit {
 
   createComponent(type) {
     this.hiddenHome = true;
-    this.container.clear();
+    if (this.componentRef) {
+      this.componentRef.instance.end.subscribe(() => {
+        this.create(type);
+      });
+      this.componentRef.instance.close();
+    } else {
+      this.create(type);
+    }
+  }
+
+  create(type) {
+    this.destroyComponent();
+
     let factory: ComponentFactory<any>;
     if (type === 'home') {
       factory = this.resolver.resolveComponentFactory(HomeComponent);
@@ -40,7 +52,14 @@ export class MainpageComponent implements OnInit {
 
     this.componentRef = this.container.createComponent(factory);
 
+    this.componentRef.instance.type = type;
     this.componentRef.instance.pageName = type;
+  }
+
+  destroyComponent() {
+    if (this.componentRef) {
+      this.componentRef.destroy();
+    }
   }
 
 }

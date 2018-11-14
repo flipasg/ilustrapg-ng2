@@ -1,12 +1,21 @@
-import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
+// tslint:disable-next-line:max-line-length
+import { Component, OnInit, ViewChild, ElementRef, Input, style, transition, animate, keyframes, OnDestroy, state, trigger, Output, EventEmitter } from '@angular/core';
 import { PageService, PageInformation, PhotoSwipeImage } from '../../services/page.service';
 import { ActivatedRoute } from '@angular/router';
-import { Item } from 'photoswipe';
+import { Item, constructor } from 'photoswipe';
 
 @Component({
   selector: 'app-page',
   templateUrl: './page.component.html',
-  styleUrls: ['./page.component.scss']
+  styleUrls: ['./page.component.scss'],
+  animations: [
+    trigger('state', [
+      state('void, hidden', style({ opacity: 0 })),
+      state('visible', style({ opacity: 1 })),
+      transition('* => visible', animate('250ms linear')),
+      transition('* => hidden', animate('100ms linear')),
+    ])
+  ]
 })
 export class PageComponent implements OnInit {
   pswpElement: HTMLElement;
@@ -27,6 +36,10 @@ export class PageComponent implements OnInit {
     voluntadpalabras: 9,
     vozeslava: 1
   };
+  @Input() type = 'success';
+  @Output() output = new EventEmitter();
+  @Output() end = new EventEmitter();
+  visibility = 'visible';
 
   constructor(public pageService: PageService) { }
 
@@ -34,6 +47,16 @@ export class PageComponent implements OnInit {
     this.pageInformation = this.pageService.getPageInformationByName(this.pageName);
     this.pageId = this.pageInformation.id;
     this.images = this.pageService.getPageImagesByName(this.pageName);
+  }
+
+  animationDone(e) {
+    if (e.toState === 'hidden') {
+      this.end.emit(true);
+    }
+  }
+
+  close() {
+    this.visibility = 'hidden';
   }
 
   openSlideshow(photoSwipeImage) {
@@ -45,7 +68,7 @@ export class PageComponent implements OnInit {
     const images = <Item[]>this.images;
 
     // Initializes and opens PhotoSwipe
-    const gallery = new PhotoSwipe(this.photoSwipe.nativeElement, PhotoSwipeUI_Default, images, options);
+    const gallery = new PhotoSwipe(this.photoSwipe.nativeElement, PhotoSwipeUI_Default, images.map(image => image.src), options);
     gallery.init();
   }
 

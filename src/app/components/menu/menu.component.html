@@ -16,8 +16,8 @@
       <div class="col-12">
         <h1 class="h4 app-title text-uppercase m-0">{{title}}</h1>
         <span class="app-subtitle">{{subtitle}}</span>
-        <span class="nav-item" (click)="openContact()">
-          <a class="nav-link text-right p-0 contant-link">{{contact.shortTitle}} &raquo;</a>
+        <span class="nav-item app-subtitle" (click)="openContact()">
+          <a class="nav-link text-right p-0 contact-link">{{contact.shortTitle}} &raquo;</a>
         </span>
       </div>
     </div>
@@ -25,19 +25,19 @@
       <div class="mr-2 pr-1 pl-1">
         <a href="https://www.instagram.com/ilustrapg" target="_blank">
 
-          <img src="assets/logos/svg/instagram.svg" class="img-fluid" alt="">
+          <img src="assets/logos/svg/instagram-blue.svg" class="img-fluid" alt="">
         </a>
       </div>
       <div class="">
         <a href="https://www.facebook.com/ilustrapg" target="_blank">
-          <img src="assets/logos/svg/facebook.svg" class="img-fluid" alt="">
+          <img src="assets/logos/svg/facebook-blue.svg" class="img-fluid" alt="">
         </a>
       </div>
 
     </div>
 
   </div>
-  <nav class="text-white ">
+  <nav class="text-white pb-2">
     <ul class="col-12 m-0">
 
       <li class="nav-item" (click)="pageChange(page)" [class.active]="activePage==page" *ngFor="let page of pages | key">

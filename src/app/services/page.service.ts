@@ -92,7 +92,7 @@ export class PageService {
       id: 'cuentos',
       title: 'Cuentos clásicos',
       shortTitle: 'Cuentos clásicos',
-      introduction: `<span>"Érase una vez un hombre que tenía hermosas casas en la ciudad y en el campo, vajilla de oro y plata, muebles tapizados de brocado y carrozas completamente doradas; pero, por desgracia, aquel hombre tenía la barba azul: aquello le hacía tan feo y tan terrible, que no había mujer ni joven que no huyera de él. Una distinguida dama, vecina suya, tenía dos hijas sumamente hermosas. Él le pidió una en matrimonio, y dejó a su elección que le diera la que quisiera. Ninguna de las dos quería y se lo pasaban la una a la otra, pues no se sentían capaces de tomar por esposo a un hombre que tuviera la barba azul. Lo que tampoco les gustaba era que se había casado ya con varias mujeres y no se sabía qué había sido de ellas." [Barba Azul-Charles Perrault]</span>`,
+      introduction: `<span>"Érase una vez un hombre que tenía hermosas casas en la ciudad y en el campo, vajilla de oro y plata, muebles tapizados de brocado y carrozas completamente doradas; pero, por desgracia, aquel hombre tenía la barba azul: aquello le hacía tan feo y tan terrible, que no había mujer ni joven que no huyera de él. Una distinguida dama, vecina suya, tenía dos hijas sumamente hermosas. Él le pidió una en matrimonio, y dejó a su elección que le diera la que quisiera. Ninguna de las dos quería y se lo pasaban la una a la otra, pues no se sentían capaces de tomar por esposo a un hombre que tuviera la barba azul. Lo que tampoco les gustaba era que se había casado ya con varias mujeres y no se sabía qué había sido de ellas." <br>[Barba Azul-Charles Perrault]</span>`,
       description: `<span>Serie de portadillas para un recopilatorio de cuentos clásicos desarrollado durante el curso de Diseño y edición de productos impresos y multimedia. El estilo gráfico de todas las portadas sigue una línea manual y expresiva en gamas coloristas. </span>`,
       numberOfImages: 8,
       alts: [
@@ -111,7 +111,7 @@ export class PageService {
       id: 'culpables',
       title: 'Culpables',
       shortTitle: 'Culpables',
-      introduction: `<span>"Make a grave for the unknown soldier, nestled in your hollow shoulder" [Jim Morrison]</span>`,
+      introduction: `<span>"Make a grave for the unknown soldier, nestled in your hollow shoulder" <br>[Jim Morrison]</span>`,
       description: `<span>Serie de retratos a figuras vinculantes en el ámbito de las diferentes disciplinas artísticas.</span>`,
       numberOfImages: 6,
       alts: [
@@ -128,8 +128,8 @@ export class PageService {
       id: 'figuras',
       title: 'Figuras',
       shortTitle: 'Figuras',
-      introduction: `<span>"Encuentra carne sobre los huesos" [Dylan Thomas]</span>`,
-      description: `<span>Serie de veintidós dibujos a pastel sobre papel kraft DIN A4 realizados durante las sesiones de dibujo con modelo vivo. Son apuntes rápidos de entre 5-10 minutos que buscan desarrollar formas alternativas.</span>`,
+      introduction: `<span>"Encuentra carne sobre los huesos" <br>[Dylan Thomas]</span>`,
+      description: `<span>Serie de veintidós dibujos a pastel sobre papel kraft DIN A4 realizados durante las sesiones de dibujo con modelo vivo. Son apuntes rápidos de entre 5-10 minutos.</span>`,
       numberOfImages: 12,
       alts: [
         'Figuras, Patricia Garcia Ramirez, ilustrapg, dibujo al natural, modelo vivo, pastel, estraza',
@@ -170,7 +170,7 @@ export class PageService {
       introduction: `<span>"Yo dije razón de ser, ¿no? Hablamos, juntos. Tú estabas y escarlatas redondas. Tu himen ronco desabrochándome, deliciosa amargura. Hablamos sin razón y gemías, gemías ruidoso sin razón. Saboreas tú la luz que chorrea de los sobacos de las negras, esbeltas, largas cigüeñas con pico de negra y se caen, cayeron lejos ellas, las luciérnagas y tú mimando mi tristeza. Aún vacías con tu hedor las noches. Una escultura azul y sabes que ronco. Respondo con pies, respondo con respondo; respondo, respondo con autoridad a la lluvia ausente de tus ojos y me odian tus no, tus me odian, tus entrañas."</span>`,
       description: `<span>Proyecto no editado que ilustra un texto propio. Reinterpreta libremente el mito grecolatino de Narciso, que sirve de pretexto para construir un drama poético entorno a la personalidad, la soledad, el proceso creativo y/o la perspectiva. En esencia, es una tragedia cuyos personajes expresan la deconstrucción del ego en clave teatral y poética.</span>
 <span>Las ilustraciones buscan un equilibrio entre diferentes tonos, desde lo arquetípica y ridículamente poético e infantil, hasta lo más expresivo, confluyendo así el dibujo a línea con manchas arrastradas en colores limpios y brillantes</span>`,
-      numberOfImages: 9,
+      numberOfImages: 8,
       alts: [
         'Deshojó la sombra y su narciso, Patricia Garcia Ramirez, ilustrapg, portada, diseño gráfico, teatro',
         'Deshojó la sombra y su narciso, Patricia Garcia Ramirez, ilustrapg, ilustración, doble página, gacela',
@@ -188,7 +188,7 @@ export class PageService {
       id: 'retratos',
       title: 'Retratos personales',
       shortTitle: 'Retratos personales',
-      introduction: '<span>"Mis retratos dicen más de mí que de la gente a la que fotografío" [Richard Avedon]</span>',
+      introduction: '<span>"Mis retratos dicen más de mí que de la gente a la que fotografío" <br>[Richard Avedon]</span>',
       description: `<span>Retratos por encargo en pequeño formato, realizados en técnica mixta.</span>`,
       numberOfImages: 7,
       alts: [
@@ -206,7 +206,7 @@ export class PageService {
       id: 'voluntadpalabras',
       title: 'La voluntad de las palabras',
       shortTitle: 'La voluntad de las palabras',
-      introduction: `<span>"Esta recopilación de relatos es la expresión más viva de la escritura creativa. Donde la voluntad de las palabras es guiada por la es­pontaneidad de la pluma. Donde la timidez o la dejadez se han convertido en la excusa perfecta para que un grupo de desconocidos compartan todos los jueves una misma pa­sión. Donde una sala anodina se transforma en mundos inventados, o no. Donde El Pilar ríe y llora."  [Rosa María Cortés Barrena]</span>`,
+      introduction: `<span>"Esta recopilación de relatos es la expresión más viva de la escritura creativa. Donde la voluntad de las palabras es guiada por la es­pontaneidad de la pluma. Donde la timidez o la dejadez se han convertido en la excusa perfecta para que un grupo de desconocidos compartan todos los jueves una misma pa­sión. Donde una sala anodina se transforma en mundos inventados, o no. Donde El Pilar ríe y llora."  <br>[Rosa María Cortés Barrena]</span>`,
       description: `<span>Libro recopilatorio de relatos del recital "La voluntad de las palabras" celebrado el 21 de marzo de 2018 a manos del grupo de escritura creativa de El Pilar. </span>
 <span>Acentuando el carácter creativo del grupo, tanto el diseño de la portada y contraportada son completamente manuales. Sin embargo, el interior adquiere un tono más formal y literario en el empleo de la tipografía, aunque lo acompañan exporádicamente pequeños dibujos a lápiz que sirven de nexo con la cubierta.</span>`,
       numberOfImages: 6,

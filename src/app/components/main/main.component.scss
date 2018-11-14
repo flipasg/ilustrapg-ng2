@@ -1,4 +1,5 @@
 @import '../../../scss/styles.scss';
+
 .overflow-auto {
   overflow: auto;
 }
@@ -19,9 +20,12 @@
   width: 100%;
   top: 0;
   left: 0;
+
   @include media-breakpoint-up(md) {
     height: 100%;
-  } // Large
+  }
+
+  // Large
 }
 
 .menu-layout {
@@ -31,12 +35,15 @@
   transform: translateX(0%) !important;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
+
   @include media-breakpoint-up(md) {
     position: relative;
     -webkit-transform: translateX(-100%) !important;
     -ms-transform: translateX(-100%) !important;
     transform: translateX(-100%) !important;
-  } // Large
+  }
+
+  // Large
 }
 
 .navbar-side {
@@ -48,23 +55,30 @@
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
   background: $linen;
+
   @include media-breakpoint-up(md) {
     position: relative;
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
     transform: translateX(0%);
-  } // Large
+  }
+
+  // Large
   @include media-breakpoint-up(lg) {
     max-width: 325px; //padding-top: 5.5rem !important;
-  } // Large
+  }
+
+  // Large
 }
 
 .mainpage-container {
   height: $height-wo-header;
-  overflow: auto;
+  overflow: hidden;
+
   @include media-breakpoint-up(lg) {
     overflow: hidden !important;
   }
+
   @include media-breakpoint-up(md) {
     height: 100%;
   }
@@ -72,6 +86,7 @@
 
 .page-logo {
   display: none;
+
   @include media-breakpoint-up(lg) {
     display: block;
   }
